@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "PixelOperator";
+  src: url("/fonts/PixelOperator.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PixelOperator";
+  src: url("/fonts/PixelOperator-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+html {
+  color: #ffffff;
+  font-size: 18px;
+}
+.app {
+  font-family: "PixelOperator", sans-serif;
+}
+.app-background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(135deg, #9d4097 0%, #0731ad 50%, #f3ff52 150%);
+  /* background-color: #0731ad; */
+  /* background-color: black; */
+}
+
+.icon {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.icon > div {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  background-image: url("/icons.webp");
+  background-size: 128px 128px;
+}
+.icon-1 {
+  background-position: 0px 0px;
+}
+.icon-2 {
+  background-position: -64px -6px;
+}
+.icon-3 {
+  background-position: -0px -60px;
+}
+.icon-4 {
+  background-position: -64px -60px;
+}
+
+@keyframes neon-flicker {
+  0%,
+  100% {
+    text-shadow: 0px 0px 4px #ff6ff3, 0px 0px 8px #ff6ff3, 0px 0px 12px #ff6ff3,
+      0px 0px 16px #ff6ff3;
+  }
+  50% {
+    text-shadow: 0px 0px 6px #ff6ff3, 0px 0px 12px #ff6ff3, 0px 0px 18px #ff6ff3,
+      0px 0px 24px #ff6ff3;
+  }
+}
+
+.neon-flicker {
+  animation: neon-flicker 1.5s infinite alternate;
+}
