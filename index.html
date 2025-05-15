@@ -38,9 +38,9 @@
     />
 
     <link rel="stylesheet" href="styles/styles.css" />
-    <!-- <link rel="stylesheet" href="styles/tailwind.css" /> -->
+    <link rel="stylesheet" href="styles/tailwind.css" />
     <link rel="icon" href="/favicon.ico" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
@@ -68,11 +68,13 @@
           },
         },
       };
-    </script>
+    </script> -->
   </head>
-  <body class="app bg-bg2 text-fg rounded h-screen max-w-screen-2xl mx-auto">
+  <body
+    class="app bg-bg2 text-fg rounded h-screen max-w-screen-2xl mx-auto relative"
+  >
     <div class="app-background"></div>
-    <p class="absolute top-4 right-4 z-10 text-xl">Coming soon</p>
+    <p class="absolute top-4 right-4 z-10 text-xl neon-flicker">Coming soon</p>
     <div class="relative py-20 shadow-lg">
       <div
         class="absolute inset-0 bg-cover bg-no-repeat bg-center brightness-50"
@@ -96,154 +98,175 @@
         </div>
       </div>
     </div>
-    <div class="container mx-auto mt-16">
-      <h2 class="sr-only">Why Pixel Treasures?</h2>
-      <ul class="grid sm:grid-cols-2 xl:grid-cols-4 gap-4">
-        <li
-          class="pl-2 flex gap-2 items-center rounded-lg shadow-lg bg-gray-900"
-        >
-          <div class="icon">
-            <div class="icon-1"></div>
-          </div>
-          <div class="p-2">
-            <h3 class="text-lg">No Listing Fees</h3>
-            <div class="text-xs">
-              Create a listing in seconds and keep everything you earn.
-            </div>
-          </div>
-        </li>
-        <li
-          class="pl-2 flex gap-2 items-center bg-gray-800 rounded-lg shadow-lg"
-        >
-          <div class="icon">
-            <div class="icon-2"></div>
-          </div>
-          <div class="p-2">
-            <h3 class="text-lg">Built for collectors</h3>
-            <div class="text-xs">
-              Track your collection, create price alerts, make offers, and more.
-            </div>
-          </div>
-        </li>
-        <li
-          class="pl-2 flex gap-2 items-center bg-gray-800 rounded-lg shadow-lg"
-        >
-          <div class="icon">
-            <div class="icon-3"></div>
-          </div>
-          <div class="p-2">
-            <h3 class="text-lg">Earn rewards</h3>
-            <div class="text-xs">
-              Earn XP, level up, unlock achievements, and earn rewards.
-            </div>
-          </div>
-        </li>
-        <li
-          class="pl-2 flex gap-2 items-center bg-gray-700 rounded-lg shadow-lg"
-        >
-          <div class="icon">
-            <div class="icon-4"></div>
-          </div>
-          <div class="p-2">
-            <h3 class="text-lg">Community-focused</h3>
-            <div class="text-xs">
-              Discuss games, trade with like-minded collectors, and find the
-              latest news, all in one place.
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class="container mx-auto my-16 flex flex-col gap-8 shadow-lg py-4">
-      <h2 class="text-2xl text-center">Ready to start collecting?</h2>
-      <p class="text-lg text-center">
-        Join now and be the first to know when we launch.
-      </p>
-      <div class="flex flex-col gap-8 items-center">
+    <div
+      class="container mx-auto mt-16 grid grid-cols-1 sm:grid-cols-2 sm:gap-8 items-center"
+    >
+      <div
+        class="relative w-full h-full sm:min-h-72 rounded-xl overflow-hidden"
+      >
         <div
-          id="mlb2-25753373"
-          class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-25753373"
-        >
-          <div class="ml-form-align-center">
-            <div class="ml-form-embedWrapper embedForm">
-              <div class="ml-form-embedBody ml-form-embedBodyDefault row-form">
+          class="absolute inset-0 bg-center bg-cover bg-no-repeat"
+          style="background-image: url('/images/859shots_so-blur.webp')"
+        ></div>
+        <div
+          class="absolute inset-0 bg-center bg-cover bg-no-repeat"
+          style="background-image: url('/images/859shots_so.webp')"
+        ></div>
+      </div>
+      <div>
+        <h2 class="sr-only">Why Pixel Treasures?</h2>
+        <ul class="grid xl:grid-cols-2 gap-8">
+          <li
+            class="pl-2 flex gap-2 items-center rounded-lg shadow-lg bg-gray-900"
+          >
+            <div class="icon">
+              <div class="icon-1"></div>
+            </div>
+            <div class="p-2">
+              <h3 class="text-lg xl:text-xl">No Listing Fees</h3>
+              <div class="text-xs xl:text-base">
+                Create a listing in seconds and keep everything you earn.
+              </div>
+            </div>
+          </li>
+          <li
+            class="pl-2 flex gap-2 items-center bg-gray-800 rounded-lg shadow-lg"
+          >
+            <div class="icon">
+              <div class="icon-2"></div>
+            </div>
+            <div class="p-2">
+              <h3 class="text-lg xl:text-xl">Built for collectors</h3>
+              <div class="text-xs xl:text-base">
+                Track your collection, create price alerts, make offers, and
+                more.
+              </div>
+            </div>
+          </li>
+          <li
+            class="pl-2 flex gap-2 items-center bg-gray-800 rounded-lg shadow-lg"
+          >
+            <div class="icon">
+              <div class="icon-3"></div>
+            </div>
+            <div class="p-2">
+              <h3 class="text-lg xl:text-xl">Earn rewards</h3>
+              <div class="text-xs xl:text-base">
+                Earn XP, level up, unlock achievements, and earn rewards.
+              </div>
+            </div>
+          </li>
+          <li
+            class="pl-2 flex gap-2 items-center bg-gray-700 rounded-lg shadow-lg"
+          >
+            <div class="icon">
+              <div class="icon-4"></div>
+            </div>
+            <div class="p-2">
+              <h3 class="text-lg xl:text-xl">Community-focused</h3>
+              <div class="text-xs xl:text-base">
+                Discuss games, trade with like-minded collectors, and find the
+                latest news, all in one place.
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container mx-auto my-16 py-4">
+      <div class="flex flex-col gap-8 shadow-lg py-4">
+        <h2 class="text-2xl text-center">Ready to start collecting?</h2>
+        <p class="text-lg text-center">
+          Join now and be the first to know when we launch.
+        </p>
+        <div class="flex flex-col gap-8 items-center">
+          <div
+            id="mlb2-25753373"
+            class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-25753373"
+          >
+            <div class="ml-form-align-center">
+              <div class="ml-form-embedWrapper embedForm">
                 <div
-                  class="ml-form-embedContent"
-                  style="margin-bottom: 0px"
-                ></div>
-
-                <form
-                  class="ml-block-form flex flex-colj items-center gap-4"
-                  action="https://assets.mailerlite.com/jsonp/1508449/forms/153853824854918201/subscribe"
-                  data-code=""
-                  method="post"
-                  target="_blank"
+                  class="ml-form-embedBody ml-form-embedBodyDefault row-form"
                 >
-                  <div class="ml-form-formContent">
-                    <div class="ml-form-fieldRow ml-last-item">
-                      <div
-                        class="ml-field-group ml-field-email ml-validate-email ml-validate-required"
-                      >
-                        <input
-                          aria-label="email"
-                          aria-required="true"
-                          type="email"
-                          class="form-control border-2 bg-transparent text-fg rounded-lg px-2 py-1 placeholder:text-muted"
-                          data-inputmask=""
-                          name="fields[email]"
-                          placeholder="Email"
-                          autocomplete="email"
-                        />
+                  <div
+                    class="ml-form-embedContent"
+                    style="margin-bottom: 0px"
+                  ></div>
+
+                  <form
+                    class="ml-block-form flex flex-colj items-center gap-4"
+                    action="https://assets.mailerlite.com/jsonp/1508449/forms/153853824854918201/subscribe"
+                    data-code=""
+                    method="post"
+                    target="_blank"
+                  >
+                    <div class="ml-form-formContent">
+                      <div class="ml-form-fieldRow ml-last-item">
+                        <div
+                          class="ml-field-group ml-field-email ml-validate-email ml-validate-required"
+                        >
+                          <input
+                            aria-label="email"
+                            aria-required="true"
+                            type="email"
+                            class="form-control border-2 bg-transparent text-fg rounded-lg px-2 py-1 placeholder:text-muted"
+                            data-inputmask=""
+                            name="fields[email]"
+                            placeholder="Email"
+                            autocomplete="email"
+                          />
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                  <input type="hidden" name="ml-submit" value="1" />
+                    <input type="hidden" name="ml-submit" value="1" />
 
-                  <div class="ml-form-embedSubmit">
-                    <button
-                      type="submit"
-                      class="primary ml-onclick-form px-4 py-1 bg-primary text-primary-against rounded-lg hover:brightness-75 transition-all duration-200 inline-block cursor-pointer shadow"
-                    >
-                      Join the waitlist
-                    </button>
+                    <div class="ml-form-embedSubmit">
+                      <button
+                        type="submit"
+                        class="primary ml-onclick-form px-4 py-1 bg-primary text-primary-against rounded-lg hover:brightness-75 transition-all duration-200 inline-block cursor-pointer shadow"
+                      >
+                        Join the waitlist
+                      </button>
 
-                    <button
-                      disabled="disabled"
-                      style="display: none"
-                      type="button"
-                      class="loading"
-                    >
-                      <div class="ml-form-embedSubmitLoad"></div>
-                      <span class="sr-only">Loading...</span>
-                    </button>
-                  </div>
+                      <button
+                        disabled="disabled"
+                        style="display: none"
+                        type="button"
+                        class="loading"
+                      >
+                        <div class="ml-form-embedSubmitLoad"></div>
+                        <span class="sr-only">Loading...</span>
+                      </button>
+                    </div>
 
-                  <input type="hidden" name="anticsrf" value="true" />
-                </form>
-              </div>
+                    <input type="hidden" name="anticsrf" value="true" />
+                  </form>
+                </div>
 
-              <div
-                class="ml-form-successBody row-success"
-                style="display: none"
-              >
                 <div
-                  class="ml-form-successContent flex items-center justify-center"
+                  class="ml-form-successBody row-success"
+                  style="display: none"
                 >
-                  <h4>Thank you!</h4>
-                  <p><br /></p>
+                  <div
+                    class="ml-form-successContent flex items-center justify-center"
+                  >
+                    <h4>Thank you!</h4>
+                    <p><br /></p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <a
+            target="_blank"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSctKrV5y8tLP7bLqMHkpJzgaLWZI7ekJ3VJmnWF5-gMlmjxZA/viewform?usp=dialog"
+            class="px-4 py-1 bg-tertiary text-tertiary-against rounded-lg hover:brightness-75 transition-all duration-200 inline-block cursor-pointer shadow"
+          >
+            Take a quick survey
+          </a>
         </div>
-        <a
-          target="_blank"
-          href="https://docs.google.com/forms/d/e/1FAIpQLSctKrV5y8tLP7bLqMHkpJzgaLWZI7ekJ3VJmnWF5-gMlmjxZA/viewform?usp=dialog"
-          class="px-4 py-1 bg-tertiary text-tertiary-against rounded-lg hover:brightness-75 transition-all duration-200 inline-block cursor-pointer shadow"
-        >
-          Take a quick survey
-        </a>
       </div>
     </div>
 
